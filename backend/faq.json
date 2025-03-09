@@ -1,250 +1,107 @@
-{
-    "faq": [
-      {
-        "question": "¿Cómo reinicio el router?",
-        "category": "Conexión",
-        "answer": "Para reiniciar el router, simplemente apágalo durante 30 segundos y luego vuelve a encenderlo. Esto debería resolver problemas comunes de conexión."
-      },
-      {
-        "question": "¿Cómo restauro los valores de fábrica de mi dispositivo?",
-        "category": "Configuración",
-        "answer": "Para restaurar los valores de fábrica de tu dispositivo, ve a 'Ajustes' > 'Sistema' > 'Restablecer' > 'Restaurar configuración de fábrica'. Ten en cuenta que esto borrará todos los datos del dispositivo."
-      },
-      {
-        "question": "¿Cómo cambio mi contraseña?",
-        "category": "Cuenta",
-        "answer": "Puedes cambiar tu contraseña accediendo a tu cuenta en línea y dirigiéndote a la sección 'Seguridad'. Allí encontrarás la opción para cambiar tu contraseña."
-      },
-      {
-        "question": "Mi impresora no imprime, ¿qué debo hacer?",
-        "category": "Impresoras",
-        "answer": "Primero, verifica que la impresora esté encendida y conectada a la computadora. Si todo parece estar bien, prueba reiniciar la impresora y la computadora. Si el problema persiste, revisa si hay atascos de papel o problemas con los cartuchos de tinta."
-      },
-      {
-        "question": "¿Cómo conecto mi impresora a Wi-Fi?",
-        "category": "Impresoras",
-        "answer": "Para conectar la impresora a Wi-Fi, ve a la configuración de red de la impresora y selecciona tu red Wi-Fi. Luego, ingresa la contraseña de tu red."
-      },
-      {
-        "question": "No puedo conectarme a la red Wi-Fi, ¿cómo soluciono el problema?",
-        "category": "Conexión",
-        "answer": "Asegúrate de que tu dispositivo esté dentro del alcance de la señal Wi-Fi. Si el problema persiste, intenta reiniciar el router y tu dispositivo. Si sigue sin funcionar, verifica que la contraseña sea correcta."
-      },
-      {
-        "question": "Mi computadora no enciende, ¿qué puedo hacer?",
-        "category": "Hardware",
-        "answer": "Verifica que el cable de alimentación esté conectado correctamente y que el enchufe esté funcionando. Si la computadora sigue sin encender, podría ser un problema con la fuente de alimentación."
-      },
-      {
-        "question": "¿Cómo puedo mejorar el rendimiento de mi computadora?",
-        "category": "Optimización",
-        "answer": "Puedes mejorar el rendimiento de tu computadora cerrando aplicaciones innecesarias, desactivando programas que se inician automáticamente y limpiando archivos temporales. También es recomendable aumentar la memoria RAM o actualizar el disco duro a un SSD."
-      },
-      {
-        "question": "¿Cómo puedo actualizar mi sistema operativo?",
-        "category": "Software",
-        "answer": "Para actualizar tu sistema operativo, ve a la sección de 'Actualizaciones' en la configuración y selecciona 'Buscar actualizaciones'. Si hay actualizaciones disponibles, sigue las instrucciones para instalarlas."
-      },
-      {
-        "question": "¿Cómo puedo liberar espacio en mi disco duro?",
-        "category": "Optimización",
-        "answer": "Puedes liberar espacio en tu disco duro eliminando archivos temporales, desinstalando programas que no necesitas y moviendo archivos grandes a un almacenamiento externo."
-      },
-      {
-        "question": "Mi pantalla está en negro, ¿qué debo hacer?",
-        "category": "Hardware",
-        "answer": "Si tu pantalla está en negro, primero asegúrate de que esté conectada correctamente. Si sigue en negro, prueba reiniciar el dispositivo o verifica que la tarjeta gráfica esté funcionando correctamente."
-      },
-      {
-        "question": "¿Qué hago si mi software no se actualiza?",
-        "category": "Software",
-        "answer": "Verifica que tu dispositivo esté conectado a internet y que haya suficiente espacio de almacenamiento. Si el problema persiste, intenta reiniciar el dispositivo y vuelve a intentarlo. También puedes comprobar si hay actualizaciones pendientes manualmente."
-      },
-      {
-        "question": "¿Cómo puedo crear una cuenta en línea?",
-        "category": "Cuenta",
-        "answer": "Para crear una cuenta en línea, visita la página de registro de la plataforma y completa la información requerida, como nombre, dirección de correo electrónico y una contraseña segura."
-      },
-      {
-        "question": "¿Cómo cambio mi dirección de correo electrónico?",
-        "category": "Cuenta",
-        "answer": "Para cambiar tu dirección de correo electrónico, accede a la configuración de tu cuenta y busca la opción para editar tu dirección de correo electrónico."
-      },
-      {
-        "question": "¿Qué puedo hacer si mi dispositivo no responde?",
-        "category": "Hardware",
-        "answer": "Si tu dispositivo no responde, intenta reiniciarlo. Si sigue sin funcionar, puede que sea necesario realizar un restablecimiento de fábrica o llevarlo a un servicio técnico."
-      },
-      {
-        "question": "¿Cómo hago una copia de seguridad de mis archivos?",
-        "category": "Software",
-        "answer": "Puedes hacer una copia de seguridad de tus archivos utilizando servicios en la nube o conectando un disco duro externo y copiando tus archivos importantes allí."
-      },
-      {
-        "question": "¿Cómo puedo mejorar la señal de Wi-Fi en mi casa?",
-        "category": "Conexión",
-        "answer": "Para mejorar la señal de Wi-Fi, intenta colocar el router en una ubicación central de la casa y alejado de obstáculos. También puedes utilizar repetidores de señal o cambiar el canal de tu router."
-      },
-      {
-        "question": "¿Cómo restablezco la contraseña de mi cuenta?",
-        "category": "Cuenta",
-        "answer": "Para restablecer la contraseña de tu cuenta, ve a la página de inicio de sesión y selecciona 'Olvidé mi contraseña'. Sigue las instrucciones que te enviarán a tu correo electrónico."
-      },
-      {
-        "question": "¿Cómo puedo eliminar una cuenta en línea?",
-        "category": "Cuenta",
-        "answer": "Para eliminar una cuenta en línea, ingresa a la configuración de tu cuenta y busca la opción para eliminarla. Ten en cuenta que esto es irreversible y perderás todos los datos asociados."
-      },
-      {
-        "question": "¿Cómo puedo agregar un dispositivo a mi red Wi-Fi?",
-        "category": "Conexión",
-        "answer": "Para agregar un dispositivo a tu red Wi-Fi, ve a la configuración de red del dispositivo y selecciona tu red Wi-Fi. Luego, ingresa la contraseña de la red."
-      },
-      {
-        "question": "¿Cómo soluciono un error de 'red no disponible'?",
-        "category": "Conexión",
-        "answer": "Si ves un error de 'red no disponible', verifica que tu dispositivo esté dentro del alcance de la señal Wi-Fi y que tu router esté funcionando correctamente. Si el problema persiste, reinicia tu router y dispositivo."
-      },
-      {
-        "question": "Mi computadora está muy lenta, ¿qué hago?",
-        "category": "Optimización",
-        "answer": "Si tu computadora está lenta, intenta cerrar programas innecesarios, desactivar programas de inicio automático, y limpiar archivos temporales. También puedes considerar aumentar la memoria RAM o cambiar a un disco SSD."
-      },
-      {
-        "question": "¿Cómo actualizo el controlador de mi impresora?",
-        "category": "Impresoras",
-        "answer": "Puedes actualizar el controlador de tu impresora visitando el sitio web del fabricante e instalando la última versión del controlador disponible para tu modelo."
-      },
-      {
-        "question": "Mi dispositivo no se conecta a la red, ¿qué hago?",
-        "category": "Conexión",
-        "answer": "Si tu dispositivo no se conecta a la red, verifica que el Wi-Fi esté activado y que estés dentro del alcance de la señal. Si el problema persiste, reinicia el router y el dispositivo."
-      },
-      {
-        "question": "¿Cómo puedo instalar una aplicación en mi dispositivo?",
-        "category": "Software",
-        "answer": "Para instalar una aplicación en tu dispositivo, ve a la tienda de aplicaciones correspondiente (App Store, Google Play, etc.), busca la aplicación y selecciona 'Instalar'."
-      },
-      {
-        "question": "¿Cómo configuro una red VPN?",
-        "category": "Conexión",
-        "answer": "Para configurar una red VPN, ve a la sección de 'Redes' en la configuración de tu dispositivo y selecciona 'Agregar una VPN'. Ingresa los detalles proporcionados por el proveedor de servicios VPN."
-      },
-      {
-        "question": "¿Qué hago si el internet está muy lento?",
-        "category": "Conexión",
-        "answer": "Si el internet está lento, verifica que no haya demasiados dispositivos conectados a la misma red. También puedes reiniciar el router, cambiar de canal o contactar con tu proveedor de internet."
-      },
-      {
-        "question": "¿Cómo cambio la contraseña de mi Wi-Fi?",
-        "category": "Conexión",
-        "answer": "Para cambiar la contraseña de tu Wi-Fi, accede a la configuración del router a través de su IP en el navegador, luego ingresa a la sección 'Red' o 'Seguridad' y cambia la contraseña."
-      },
-      {
-        "question": "Mi computadora no tiene sonido, ¿qué debo hacer?",
-        "category": "Hardware",
-        "answer": "Si tu computadora no tiene sonido, verifica que el volumen esté activado y que los altavoces estén conectados correctamente. También revisa si los controladores de audio están actualizados."
-      },
-      {
-        "question": "¿Cómo puedo reparar un archivo dañado?",
-        "category": "Software",
-        "answer": "Para reparar un archivo dañado, intenta abrirlo con otro programa que soporte el formato. Si eso no funciona, busca herramientas especializadas para reparar archivos dañados de ese tipo."
-      },
-      {
-        "question": "¿Cómo restauro mi sistema operativo a un punto anterior?",
-        "category": "Software",
-        "answer": "Para restaurar tu sistema operativo, ve a 'Panel de control' > 'Recuperación' > 'Abrir restauración del sistema' y selecciona un punto de restauración previo."
-      },
-      {
-        "question": "¿Qué hago si mi computadora se congela?",
-        "category": "Hardware",
-        "answer": "Si tu computadora se congela, intenta presionar 'Ctrl + Alt + Del' para abrir el Administrador de tareas y cerrar los programas que no responden. Si el problema persiste, reinicia el dispositivo."
-      },
-      {
-        "question": "¿Cómo protejo mi red Wi-Fi?",
-        "category": "Conexión",
-        "answer": "Para proteger tu red Wi-Fi, utiliza un cifrado fuerte como WPA3, cambia la contraseña regularmente y desactiva la opción de difusión del SSID."
-      },
-      {
-        "question": "¿Cómo hago una copia de seguridad de mis datos?",
-        "category": "Software",
-        "answer": "Puedes hacer una copia de seguridad de tus datos utilizando un servicio en la nube, como Google Drive o Dropbox, o conectando un disco duro externo y copiando tus archivos importantes."
-      },
-      {
-        "question": "¿Cómo cambio la configuración de privacidad de mi cuenta?",
-        "category": "Cuenta",
-        "answer": "Para cambiar la configuración de privacidad de tu cuenta, ingresa a la configuración de privacidad y selecciona las opciones que desees modificar, como la visibilidad de tu perfil o la información compartida."
-      },
-      {
-        "question": "Mi computadora se reinicia sola, ¿qué debo hacer?",
-        "category": "Hardware",
-        "answer": "Si tu computadora se reinicia sola, podría ser un problema de hardware o software. Verifica que los controladores estén actualizados y revisa la temperatura de la CPU. Si el problema persiste, lleva el dispositivo a un servicio técnico."
-      },
-      {
-        "question": "¿Cómo puedo eliminar un archivo del sistema que no se puede borrar?",
-        "category": "Software",
-        "answer": "Si un archivo no se puede eliminar, prueba reiniciar el dispositivo en modo seguro y eliminar el archivo. También puedes utilizar una herramienta de eliminación de archivos en modo forzado."
-      },
-      {
-        "question": "¿Cómo puedo mejorar la velocidad de mi computadora?",
-        "category": "Optimización",
-        "answer": "Puedes mejorar la velocidad de tu computadora cerrando aplicaciones innecesarias, desfragmentando el disco duro (si es HDD), y aumentando la memoria RAM o instalando un disco SSD."
-      },
-      {
-        "question": "¿Cómo puedo configurar un servidor FTP?",
-        "category": "Conexión",
-        "answer": "Para configurar un servidor FTP, instala un software de servidor FTP, configura los puertos y crea cuentas de usuario con permisos para acceder a los archivos compartidos."
-      },
-      {
-        "question": "¿Cómo puedo bloquear sitios web en mi red?",
-        "category": "Conexión",
-        "answer": "Para bloquear sitios web en tu red, accede a la configuración del router y busca la opción de filtrado de contenido o de bloqueo de sitios web."
-      },
-      {
-        "question": "Mi conexión a internet se cae frecuentemente, ¿qué puedo hacer?",
-        "category": "Conexión",
-        "answer": "Si tu conexión a internet se cae frecuentemente, verifica que el router esté funcionando correctamente, cambia el canal Wi-Fi y contacta con tu proveedor de internet para verificar si hay problemas en la red."
-      },
-      {
-        "question": "¿Cómo puedo actualizar el firmware de mi router?",
-        "category": "Conexión",
-        "answer": "Para actualizar el firmware de tu router, accede a la interfaz de administración del router y busca la sección de actualización de firmware. Descarga la última versión desde el sitio web del fabricante e instálala."
-      },
-      {
-        "question": "¿Cómo configuro una cuenta de correo electrónico en mi dispositivo?",
-        "category": "Cuenta",
-        "answer": "Para configurar una cuenta de correo electrónico en tu dispositivo, abre la aplicación de correo, selecciona 'Agregar cuenta' e ingresa los datos de tu cuenta, como dirección de correo y contraseña."
-      },
-      {
-        "question": "¿Cómo puedo eliminar la caché de mi navegador?",
-        "category": "Software",
-        "answer": "Para eliminar la caché de tu navegador, ve a la configuración de privacidad y busca la opción para eliminar el historial de navegación. Selecciona 'Caché' y haz clic en 'Eliminar'."
-      },
-      {
-        "question": "¿Cómo restablezco la configuración de mi dispositivo a los valores predeterminados?",
-        "category": "Configuración",
-        "answer": "Para restablecer la configuración de tu dispositivo a los valores predeterminados, ve a la sección 'Ajustes' > 'Restablecer' > 'Restaurar valores predeterminados'."
-      },
-      {
-        "question": "Mi pantalla parpadea, ¿cómo lo soluciono?",
-        "category": "Hardware",
-        "answer": "Si tu pantalla parpadea, puede ser un problema con la tarjeta gráfica o el cable de conexión. Asegúrate de que el cable esté bien conectado y prueba actualizar los controladores de la tarjeta gráfica."
-      },
-      {
-        "question": "¿Cómo configuro una red de invitados en mi Wi-Fi?",
-        "category": "Conexión",
-        "answer": "Para configurar una red de invitados en tu Wi-Fi, accede a la configuración del router y habilita la opción de red de invitados. Establece los límites de acceso y la contraseña."
-      },
-      {
-        "question": "Mi computadora no reconoce mi disco duro externo, ¿qué hago?",
-        "category": "Hardware",
-        "answer": "Si tu computadora no reconoce el disco duro externo, verifica que el cable esté funcionando correctamente. Si el problema persiste, prueba en otro puerto USB o en otra computadora."
-      },
-      {
-        "question": "¿Cómo puedo proteger mi computadora contra virus?",
-        "category": "Seguridad",
-        "answer": "Para proteger tu computadora contra virus, instala un software antivirus actualizado, realiza análisis periódicos y evita descargar archivos de fuentes no confiables."
-      }
+    [
+        {
+            "question": "¿Cómo restablezco mi contraseña de Wi-Fi?",
+            "answer": "Para restablecer tu contraseña de Wi-Fi, inicia sesión en la configuración de tu router a través de su dirección IP (generalmente 192.168.1.1), busca la sección 'Inalámbrico' y cambia la contraseña. Guarda los cambios.",
+            "category": "Internet"
+        },
+        {
+            "question": "¿Cómo puedo mejorar el rendimiento de mi computadora?",
+            "answer": "Para mejorar el rendimiento: 1) Cierra aplicaciones no utilizadas, 2) Aumenta la memoria RAM, 3) Elimina archivos innecesarios, 4) Desfragmenta el disco duro (para HDDs), 5) Desactiva programas de inicio.",
+            "category": "Hardware"
+        },
+        {
+            "question": "¿Cómo instalo una actualización de software en mi teléfono?",
+            "answer": "Para instalar una actualización de software: 1) Conéctate a Wi-Fi, 2) Ve a la configuración de tu teléfono, 3) Pulsa en 'Actualización de software', 4) Selecciona 'Descargar e instalar'.",
+            "category": "Software"
+        },
+        {
+            "question": "¿Qué debo hacer si mi laptop se sobrecalienta?",
+            "answer": "Para solucionar el sobrecalentamiento: 1) Usa tu laptop sobre una superficie dura y plana, 2) Limpia las ventilaciones y los ventiladores con aire comprimido, 3) Cierra programas innecesarios, 4) Usa una base de refrigeración.",
+            "category": "Hardware"
+        },
+        {
+            "question": "¿Cómo puedo recuperar un archivo eliminado?",
+            "answer": "Para recuperar un archivo eliminado: 1) Revisa la Papelera de reciclaje (Windows) o la Papelera (Mac), 2) Usa software de recuperación de archivos, 3) Si estaba sincronizado, revisa el almacenamiento en la nube, 4) Contacta al soporte técnico si es necesario.",
+            "category": "Software"
+        },
+        {
+            "question": "¿Cómo protejo mi computadora contra ransomware?",
+            "answer": "Para protegerte del ransomware: 1) Instala un software antivirus, 2) Evita abrir correos o archivos adjuntos sospechosos, 3) Realiza copias de seguridad con frecuencia, 4) Mantén tu software actualizado.",
+            "category": "Seguridad"
+        },
+        {
+            "question": "¿Cómo cambio el nombre de usuario y la contraseña predeterminados de mi router?",
+            "answer": "Para cambiar las credenciales predeterminadas, inicia sesión en la página de administración de tu router usando su dirección IP. Ve a la sección 'Administración' o 'Seguridad' y cambia el nombre de usuario y la contraseña.",
+            "category": "Internet"
+        },
+        {
+            "question": "¿Cómo sé si la batería de mi laptop está fallando?",
+            "answer": "Para verificar el estado de la batería de tu laptop: 1) Observa su rendimiento y duración de carga, 2) Consulta el estado de la batería en la configuración del sistema, 3) Ejecuta pruebas de diagnóstico para comprobar su salud.",
+            "category": "Hardware"
+        },
+        {
+            "question": "¿Cómo configuro una VPN?",
+            "answer": "Para configurar una VPN, elige un proveedor de VPN, descarga e instala su aplicación, luego inicia sesión y sigue su guía de configuración para establecer la conexión.",
+            "category": "Seguridad"
+        },
+        {
+            "question": "¿Cómo instalo un programa antivirus en mi computadora?",
+            "answer": "Para instalar un antivirus: 1) Descarga el software de un proveedor confiable, 2) Ejecuta el instalador, 3) Sigue las instrucciones de instalación, 4) Actualiza el software y realiza un escaneo.",
+            "category": "Seguridad"
+        },
+        {
+            "question": "¿Cómo puedo cambiar mi dirección IP?",
+            "answer": "Para cambiar tu dirección IP: 1) Reinicia tu router, 2) Usa una VPN, 3) Contacta a tu proveedor de Internet si necesitas una IP estática.",
+            "category": "Internet"
+        },
+        {
+            "question": "¿Cómo actualizo el firmware de mi router?",
+            "answer": "Para actualizar el firmware de tu router, inicia sesión en la página de configuración del router, busca la sección 'Actualización de firmware' y sigue las instrucciones para descargar e instalar la última versión.",
+            "category": "Internet"
+        },
+        {
+            "question": "¿Cómo restablezco mi computadora a su configuración de fábrica?",
+            "answer": "Para restaurar a la configuración de fábrica: 1) Haz una copia de seguridad de tus datos, 2) Ve a 'Configuración' > 'Actualización y Seguridad' > 'Recuperación', 3) Selecciona 'Restablecer esta PC' y sigue las instrucciones en pantalla.",
+            "category": "Software"
+        },
+        {
+            "question": "¿Cómo desinstalo una aplicación en mi computadora?",
+            "answer": "Para desinstalar una aplicación: 1) Ve al 'Panel de Control' > 'Programas y características' (Windows) o 'Aplicaciones' (Mac), 2) Encuentra el programa, 3) Selecciona 'Desinstalar'.",
+            "category": "Software"
+        },
+        {
+            "question": "¿Cómo puedo prevenir ataques de phishing?",
+            "answer": "Para evitar el phishing: 1) Ten precaución con correos o mensajes no solicitados, 2) No hagas clic en enlaces sospechosos, 3) Verifica el correo del remitente, 4) Usa software anti-phishing.",
+            "category": "Seguridad"
+        },
+        {
+            "question": "¿Cómo puedo actualizar la memoria RAM de mi computadora?",
+            "answer": "Para actualizar la RAM: 1) Verifica la compatibilidad con tu sistema, 2) Compra una memoria RAM compatible, 3) Apaga y desconecta la computadora, 4) Abre la carcasa e instala la nueva RAM.",
+            "category": "Hardware"
+        },
+        {
+            "question": "¿Cómo hago una copia de seguridad de mi teléfono?",
+            "answer": "Para hacer una copia de seguridad de tu teléfono: 1) Usa servicios en la nube como iCloud o Google Drive, 2) Conéctate a Wi-Fi y sigue las opciones de respaldo en la configuración de tu teléfono.",
+            "category": "Software"
+        },
+        {
+            "question": "¿Qué debo hacer si mi cuenta de correo electrónico ha sido hackeada?",
+            "answer": "Si tu correo ha sido hackeado: 1) Cambia tu contraseña de inmediato, 2) Habilita la autenticación en dos pasos, 3) Revisa la actividad de la cuenta, 4) Contacta a tu proveedor de correo electrónico.",
+            "category": "Seguridad"
+        },
+        {
+            "question": "¿Cómo configuro una impresora inalámbrica?",
+            "answer": "Para configurar una impresora inalámbrica: 1) Conéctala a Wi-Fi desde su pantalla o configuración, 2) Instala los controladores en tu computadora, 3) Selecciona la impresora en la lista de dispositivos disponibles.",
+            "category": "Hardware"
+        },
+        {
+            "question": "¿Cómo verifico si mi computadora tiene un virus?",
+            "answer": "Para verificar si hay un virus: 1) Realiza un escaneo completo del sistema con un software antivirus, 2) Observa si hay comportamientos extraños como bajo rendimiento o ventanas emergentes inusuales.",
+            "category": "Seguridad"
+        },
+        {
+            "question": "¿Cómo actualizo mi sistema operativo?",
+            "answer": "Para actualizar tu sistema operativo: 1) Ve a la configuración del sistema, 2) Busca 'Actualización y Seguridad', 3) Haz clic en 'Buscar actualizaciones', 4) Instala las últimas actualizaciones disponibles.",
+            "category": "Software"
+        }
     ]
-  }
-  
