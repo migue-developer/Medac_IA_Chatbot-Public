@@ -1,107 +1,112 @@
-    [
-        {
-            "question": "¿Cómo restablezco mi contraseña de Wi-Fi?",
-            "answer": "Para restablecer tu contraseña de Wi-Fi, inicia sesión en la configuración de tu router a través de su dirección IP (generalmente 192.168.1.1), busca la sección 'Inalámbrico' y cambia la contraseña. Guarda los cambios.",
-            "category": "Internet"
-        },
-        {
-            "question": "¿Cómo puedo mejorar el rendimiento de mi computadora?",
-            "answer": "Para mejorar el rendimiento: 1) Cierra aplicaciones no utilizadas, 2) Aumenta la memoria RAM, 3) Elimina archivos innecesarios, 4) Desfragmenta el disco duro (para HDDs), 5) Desactiva programas de inicio.",
-            "category": "Hardware"
-        },
-        {
-            "question": "¿Cómo instalo una actualización de software en mi teléfono?",
-            "answer": "Para instalar una actualización de software: 1) Conéctate a Wi-Fi, 2) Ve a la configuración de tu teléfono, 3) Pulsa en 'Actualización de software', 4) Selecciona 'Descargar e instalar'.",
-            "category": "Software"
-        },
-        {
-            "question": "¿Qué debo hacer si mi laptop se sobrecalienta?",
-            "answer": "Para solucionar el sobrecalentamiento: 1) Usa tu laptop sobre una superficie dura y plana, 2) Limpia las ventilaciones y los ventiladores con aire comprimido, 3) Cierra programas innecesarios, 4) Usa una base de refrigeración.",
-            "category": "Hardware"
-        },
-        {
-            "question": "¿Cómo puedo recuperar un archivo eliminado?",
-            "answer": "Para recuperar un archivo eliminado: 1) Revisa la Papelera de reciclaje (Windows) o la Papelera (Mac), 2) Usa software de recuperación de archivos, 3) Si estaba sincronizado, revisa el almacenamiento en la nube, 4) Contacta al soporte técnico si es necesario.",
-            "category": "Software"
-        },
-        {
-            "question": "¿Cómo protejo mi computadora contra ransomware?",
-            "answer": "Para protegerte del ransomware: 1) Instala un software antivirus, 2) Evita abrir correos o archivos adjuntos sospechosos, 3) Realiza copias de seguridad con frecuencia, 4) Mantén tu software actualizado.",
-            "category": "Seguridad"
-        },
-        {
-            "question": "¿Cómo cambio el nombre de usuario y la contraseña predeterminados de mi router?",
-            "answer": "Para cambiar las credenciales predeterminadas, inicia sesión en la página de administración de tu router usando su dirección IP. Ve a la sección 'Administración' o 'Seguridad' y cambia el nombre de usuario y la contraseña.",
-            "category": "Internet"
-        },
-        {
-            "question": "¿Cómo sé si la batería de mi laptop está fallando?",
-            "answer": "Para verificar el estado de la batería de tu laptop: 1) Observa su rendimiento y duración de carga, 2) Consulta el estado de la batería en la configuración del sistema, 3) Ejecuta pruebas de diagnóstico para comprobar su salud.",
-            "category": "Hardware"
-        },
-        {
-            "question": "¿Cómo configuro una VPN?",
-            "answer": "Para configurar una VPN, elige un proveedor de VPN, descarga e instala su aplicación, luego inicia sesión y sigue su guía de configuración para establecer la conexión.",
-            "category": "Seguridad"
-        },
-        {
-            "question": "¿Cómo instalo un programa antivirus en mi computadora?",
-            "answer": "Para instalar un antivirus: 1) Descarga el software de un proveedor confiable, 2) Ejecuta el instalador, 3) Sigue las instrucciones de instalación, 4) Actualiza el software y realiza un escaneo.",
-            "category": "Seguridad"
-        },
-        {
-            "question": "¿Cómo puedo cambiar mi dirección IP?",
-            "answer": "Para cambiar tu dirección IP: 1) Reinicia tu router, 2) Usa una VPN, 3) Contacta a tu proveedor de Internet si necesitas una IP estática.",
-            "category": "Internet"
-        },
-        {
-            "question": "¿Cómo actualizo el firmware de mi router?",
-            "answer": "Para actualizar el firmware de tu router, inicia sesión en la página de configuración del router, busca la sección 'Actualización de firmware' y sigue las instrucciones para descargar e instalar la última versión.",
-            "category": "Internet"
-        },
-        {
-            "question": "¿Cómo restablezco mi computadora a su configuración de fábrica?",
-            "answer": "Para restaurar a la configuración de fábrica: 1) Haz una copia de seguridad de tus datos, 2) Ve a 'Configuración' > 'Actualización y Seguridad' > 'Recuperación', 3) Selecciona 'Restablecer esta PC' y sigue las instrucciones en pantalla.",
-            "category": "Software"
-        },
-        {
-            "question": "¿Cómo desinstalo una aplicación en mi computadora?",
-            "answer": "Para desinstalar una aplicación: 1) Ve al 'Panel de Control' > 'Programas y características' (Windows) o 'Aplicaciones' (Mac), 2) Encuentra el programa, 3) Selecciona 'Desinstalar'.",
-            "category": "Software"
-        },
-        {
-            "question": "¿Cómo puedo prevenir ataques de phishing?",
-            "answer": "Para evitar el phishing: 1) Ten precaución con correos o mensajes no solicitados, 2) No hagas clic en enlaces sospechosos, 3) Verifica el correo del remitente, 4) Usa software anti-phishing.",
-            "category": "Seguridad"
-        },
-        {
-            "question": "¿Cómo puedo actualizar la memoria RAM de mi computadora?",
-            "answer": "Para actualizar la RAM: 1) Verifica la compatibilidad con tu sistema, 2) Compra una memoria RAM compatible, 3) Apaga y desconecta la computadora, 4) Abre la carcasa e instala la nueva RAM.",
-            "category": "Hardware"
-        },
-        {
-            "question": "¿Cómo hago una copia de seguridad de mi teléfono?",
-            "answer": "Para hacer una copia de seguridad de tu teléfono: 1) Usa servicios en la nube como iCloud o Google Drive, 2) Conéctate a Wi-Fi y sigue las opciones de respaldo en la configuración de tu teléfono.",
-            "category": "Software"
-        },
-        {
-            "question": "¿Qué debo hacer si mi cuenta de correo electrónico ha sido hackeada?",
-            "answer": "Si tu correo ha sido hackeado: 1) Cambia tu contraseña de inmediato, 2) Habilita la autenticación en dos pasos, 3) Revisa la actividad de la cuenta, 4) Contacta a tu proveedor de correo electrónico.",
-            "category": "Seguridad"
-        },
-        {
-            "question": "¿Cómo configuro una impresora inalámbrica?",
-            "answer": "Para configurar una impresora inalámbrica: 1) Conéctala a Wi-Fi desde su pantalla o configuración, 2) Instala los controladores en tu computadora, 3) Selecciona la impresora en la lista de dispositivos disponibles.",
-            "category": "Hardware"
-        },
-        {
-            "question": "¿Cómo verifico si mi computadora tiene un virus?",
-            "answer": "Para verificar si hay un virus: 1) Realiza un escaneo completo del sistema con un software antivirus, 2) Observa si hay comportamientos extraños como bajo rendimiento o ventanas emergentes inusuales.",
-            "category": "Seguridad"
-        },
-        {
-            "question": "¿Cómo actualizo mi sistema operativo?",
-            "answer": "Para actualizar tu sistema operativo: 1) Ve a la configuración del sistema, 2) Busca 'Actualización y Seguridad', 3) Haz clic en 'Buscar actualizaciones', 4) Instala las últimas actualizaciones disponibles.",
-            "category": "Software"
-        }
-    ]
+[
+    {
+        "question": "¿Cómo restablezco mi contraseña de Wi-Fi?",
+        "answer": "Para restablecer tu contraseña de Wi-Fi, inicia sesión en la configuración de tu router a través de su dirección IP (generalmente 192.168.1.1), busca la sección 'Inalámbrico' y cambia la contraseña. Guarda los cambios.",
+        "category": "Internet"
+    },
+    {
+        "question": "¿Cómo puedo mejorar el rendimiento de mi computadora?",
+        "answer": "Para mejorar el rendimiento: 1) Cierra aplicaciones no utilizadas, 2) Aumenta la memoria RAM, 3) Elimina archivos innecesarios, 4) Desfragmenta el disco duro (para HDDs), 5) Desactiva programas de inicio.",
+        "category": "Hardware"
+    },
+    {
+        "question": "¿Cómo instalo una actualización de software en mi teléfono?",
+        "answer": "Para instalar una actualización de software: 1) Conéctate a Wi-Fi, 2) Ve a la configuración de tu teléfono, 3) Pulsa en 'Actualización de software', 4) Selecciona 'Descargar e instalar'.",
+        "category": "Software"
+    },
+    {
+        "question": "¿Qué debo hacer si mi laptop se sobrecalienta?",
+        "answer": "Para solucionar el sobrecalentamiento: 1) Usa tu laptop sobre una superficie dura y plana, 2) Limpia las ventilaciones y los ventiladores con aire comprimido, 3) Cierra programas innecesarios, 4) Usa una base de refrigeración.",
+        "category": "Hardware"
+    },
+    {
+        "question": "¿Cómo puedo recuperar un archivo eliminado?",
+        "answer": "Para recuperar un archivo eliminado: 1) Revisa la Papelera de reciclaje (Windows) o la Papelera (Mac), 2) Usa software de recuperación de archivos, 3) Si estaba sincronizado, revisa el almacenamiento en la nube, 4) Contacta al soporte técnico si es necesario.",
+        "category": "Software"
+    },
+    {
+        "question": "¿Cómo protejo mi computadora contra ransomware?",
+        "answer": "Para protegerte del ransomware: 1) Instala un software antivirus, 2) Evita abrir correos o archivos adjuntos sospechosos, 3) Realiza copias de seguridad con frecuencia, 4) Mantén tu software actualizado.",
+        "category": "Seguridad"
+    },
+    {
+        "question": "¿Cómo cambio el nombre de usuario y la contraseña predeterminados de mi router?",
+        "answer": "Para cambiar las credenciales predeterminadas, inicia sesión en la página de administración de tu router usando su dirección IP. Ve a la sección 'Administración' o 'Seguridad' y cambia el nombre de usuario y la contraseña.",
+        "category": "Internet"
+    },
+    {
+        "question": "¿Cómo sé si la batería de mi laptop está fallando?",
+        "answer": "Para verificar el estado de la batería de tu laptop: 1) Observa su rendimiento y duración de carga, 2) Consulta el estado de la batería en la configuración del sistema, 3) Ejecuta pruebas de diagnóstico para comprobar su salud.",
+        "category": "Hardware"
+    },
+    {
+        "question": "¿Cómo configuro una VPN?",
+        "answer": "Para configurar una VPN, elige un proveedor de VPN, descarga e instala su aplicación, luego inicia sesión y sigue su guía de configuración para establecer la conexión.",
+        "category": "Seguridad"
+    },
+    {
+        "question": "¿Cómo instalo un programa antivirus en mi computadora?",
+        "answer": "Para instalar un antivirus: 1) Descarga el software de un proveedor confiable, 2) Ejecuta el instalador, 3) Sigue las instrucciones de instalación, 4) Actualiza el software y realiza un escaneo.",
+        "category": "Seguridad"
+    },
+    {
+        "question": "¿Cómo puedo cambiar mi dirección IP?",
+        "answer": "Para cambiar tu dirección IP: 1) Reinicia tu router, 2) Usa una VPN, 3) Contacta a tu proveedor de Internet si necesitas una IP estática.",
+        "category": "Internet"
+    },
+    {
+        "question": "¿Cómo actualizo el firmware de mi router?",
+        "answer": "Para actualizar el firmware de tu router, inicia sesión en la página de configuración del router, busca la sección 'Actualización de firmware' y sigue las instrucciones para descargar e instalar la última versión.",
+        "category": "Internet"
+    },
+    {
+        "question": "¿Cómo restablezco mi computadora a su configuración de fábrica?",
+        "answer": "Para restaurar a la configuración de fábrica: 1) Haz una copia de seguridad de tus datos, 2) Ve a 'Configuración' > 'Actualización y Seguridad' > 'Recuperación', 3) Selecciona 'Restablecer esta PC' y sigue las instrucciones en pantalla.",
+        "category": "Software"
+    },
+    {
+        "question": "¿Cómo desinstalo una aplicación en mi computadora?",
+        "answer": "Para desinstalar una aplicación: 1) Ve al 'Panel de Control' > 'Programas y características' (Windows) o 'Aplicaciones' (Mac), 2) Encuentra el programa, 3) Selecciona 'Desinstalar'.",
+        "category": "Software"
+    },
+    {
+        "question": "¿Cómo puedo prevenir ataques de phishing?",
+        "answer": "Para evitar el phishing: 1) Ten precaución con correos o mensajes no solicitados, 2) No hagas clic en enlaces sospechosos, 3) Verifica el correo del remitente, 4) Usa software anti-phishing.",
+        "category": "Seguridad"
+    },
+    {
+        "question": "¿Cómo puedo actualizar la memoria RAM de mi computadora?",
+        "answer": "Para actualizar la RAM: 1) Verifica la compatibilidad con tu sistema, 2) Compra una memoria RAM compatible, 3) Apaga y desconecta la computadora, 4) Abre la carcasa e instala la nueva RAM.",
+        "category": "Hardware"
+    },
+    {
+        "question": "¿Cómo hago una copia de seguridad de mi teléfono?",
+        "answer": "Para hacer una copia de seguridad de tu teléfono: 1) Usa servicios en la nube como iCloud o Google Drive, 2) Conéctate a Wi-Fi y sigue las opciones de respaldo en la configuración de tu teléfono.",
+        "category": "Software"
+    },
+    {
+        "question": "¿Qué debo hacer si mi cuenta de correo electrónico ha sido hackeada?",
+        "answer": "Si tu correo ha sido hackeado: 1) Cambia tu contraseña de inmediato, 2) Habilita la autenticación en dos pasos, 3) Revisa la actividad de la cuenta, 4) Contacta a tu proveedor de correo electrónico.",
+        "category": "Seguridad"
+    },
+    {
+        "question": "¿Cómo configuro una impresora inalámbrica?",
+        "answer": "Para configurar una impresora inalámbrica: 1) Conéctala a Wi-Fi desde su pantalla o configuración, 2) Instala los controladores en tu computadora, 3) Selecciona la impresora en la lista de dispositivos disponibles.",
+        "category": "Hardware"
+    },
+    {
+        "question": "¿Cómo verifico si mi computadora tiene un virus?",
+        "answer": "Para verificar si hay un virus: 1) Realiza un escaneo completo del sistema con un software antivirus, 2) Observa si hay comportamientos extraños como bajo rendimiento o ventanas emergentes inusuales.",
+        "category": "Seguridad"
+    },
+    {
+        "question": "¿Cómo actualizo mi sistema operativo?",
+        "answer": "Para actualizar tu sistema operativo: 1) Ve a la configuración del sistema, 2) Busca 'Actualización y Seguridad', 3) Haz clic en 'Buscar actualizaciones', 4) Instala las últimas actualizaciones disponibles.",
+        "category": "Software"
+    },
+    {
+        "question": "¿Cómo verifico si mi computadora tiene un virus",
+        "answer": "Para verificar si hay un virus: 1) Realiza un escaneo completo del sistema con un software antivirus, 2) Observa si hay comportamientos extraños como bajo rendimiento o ventanas emergentes inusuales.",
+        "category": "General"
+    }
+]
