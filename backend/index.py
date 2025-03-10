@@ -9,6 +9,19 @@ from pydantic import BaseModel
 import torch
 from collections import defaultdict
 import random
+import nltk
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
+
+# Descargar recursos de NLTK
+nltk.download("punkt")
+nltk.download("stopwords")
+nltk.download("wordnet")
+
+# Inicializar herramientas de NLTK
+lemmatizer = WordNetLemmatizer()
+stop_words = set(stopwords.words("spanish"))
 
 # Cargar modelos
 embed_model = SentenceTransformer('all-MiniLM-L6-v2')
@@ -55,35 +68,16 @@ class SupportChatBot:
         self.vectorizer = vectorizer
         self.classifier = classifier
 
-    def generate_t5_response(self, question, category, context=""):
-        # Create a more specific prompt in Spanish
-        prompt = f"Genera una respuesta detallada en español para: {question}\nTema: {category}\nInformación relevante: {context}\nLa respuesta debe ser clara y específica."
-        inputs = self.tokenizer(prompt, return_tensors="pt", max_length=512, truncation=True)
-        
-        with torch.no_grad():
-            outputs = self.model.generate(
-                inputs.input_ids,
-                max_length=200,
-                num_beams=5,
-                temperature=0.6,  # Reduced for more focused responses
-                top_k=30,
-                top_p=0.85,
-                do_sample=True,
-                early_stopping=True,
-                no_repeat_ngram_size=3,
-                length_penalty=2.0  # Encourage more detailed responses
-            )
-        
-        generated_text = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
-        
-        # Ensure the response is meaningful
-        if len(generated_text.split()) < 10 or not any(word in generated_text.lower() for word in question.lower().split()):
-            return f"Para resolver tu consulta sobre {question}: {context}"
-            
-        return generated_text
+    def preprocess_text(self, text):
+        """Preprocesa el texto eliminando stopwords y aplicando lematización con NLTK."""
+        tokens = word_tokenize(text.lower())
+        tokens = [t for t in tokens if t.isalnum()]
+        tokens = [lemmatizer.lemmatize(t) for t in tokens if t not in stop_words]
+        return " ".join(tokens)
 
     def process_question(self, user_question):
-        user_vector = self.vectorizer.transform([user_question])
+        processed_question = self.preprocess_text(user_question)
+        user_vector = self.vectorizer.transform([processed_question])
         predicted_index = self.classifier.predict(user_vector)[0]
         predicted_category = categories[predicted_index]
 
@@ -101,27 +95,42 @@ class SupportChatBot:
         best_responses = [(filtered_answers[i], similarities[i].item()) for i in top_indices]
         max_similarity = best_responses[0][1]
 
-        print(best_responses)
-        print(max_similarity)
-        # If similarity is very low (< 0.2), use T5 generation
         if max_similarity < 0.4:
             context = " ".join([ans for ans, _ in best_responses])
             return self.generate_t5_response(user_question, predicted_category, context)
-        
-        # If similarity is moderate (0.2 - 0.4), combine top responses
         elif max_similarity < 0.7:
             combined_response = "Basado en preguntas similares: \n"
             for answer, score in best_responses[:2]:
                 combined_response += f"- {answer}\n"
             return combined_response
-        
-        # If similarity is good (>= 0.4), return best match
         return best_responses[0][0]
 
-# Crear instancia del chatbot
+    def generate_t5_response(self, question, category, context=""):
+        prompt = f"Genera una respuesta detallada en español para: {question}\nTema: {category}\nInformación relevante: {context}\nLa respuesta debe ser clara y específica."
+        inputs = self.tokenizer(prompt, return_tensors="pt", max_length=512, truncation=True)
+        
+        with torch.no_grad():
+            outputs = self.model.generate(
+                inputs.input_ids,
+                max_length=200,
+                num_beams=5,
+                temperature=0.6,
+                top_k=30,
+                top_p=0.85,
+                do_sample=True,
+                early_stopping=True,
+                no_repeat_ngram_size=3,
+                length_penalty=2.0
+            )
+        
+        generated_text = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
+        
+        if len(generated_text.split()) < 10 or not any(word in generated_text.lower() for word in question.lower().split()):
+            return f"Para resolver tu consulta sobre {question}: {context}"
+        return generated_text
+
 chatbot = SupportChatBot("DigiBite Assistant", t5_model, t5_tokenizer, embed_model, vectorizer, classifier)
 
-# Configuración de FastAPI
 app = FastAPI()
 
 app.add_middleware(
@@ -134,22 +143,15 @@ app.add_middleware(
 
 class QuestionRequest(BaseModel):
     question: str
-    correct_answer: str = None  # Campo opcional para las correcciones
 
 @app.post("/ask")
 async def ask(request: QuestionRequest):
     user_input = request.question
-    correct_answer = request.correct_answer
     
     if not user_input:
         raise HTTPException(status_code=400, detail="No se proporcionó ninguna pregunta")
     
-    # Procesar la pregunta y obtener la respuesta
     response = chatbot.process_question(user_input)
-
-    # Si se proporciona una corrección, actualizar el FAQ
-    if correct_answer:
-        chatbot.update_faq(user_input, correct_answer)
     
     return {"answer": response}
 
