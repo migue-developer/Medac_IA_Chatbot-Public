@@ -54,8 +54,8 @@ class SupportChatBot:
         
         # Guardar la respuesta con la categoría predicha
         new_entry = {
-            'question': user_input,
-            'answer': response,
+            'question': user_question,
+            'answer': answer,
             'category': predicted_category
         }
 
@@ -92,7 +92,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["http://localhost:3000"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

@@ -103,10 +103,5 @@
         "question": "¿Cómo actualizo mi sistema operativo?",
         "answer": "Para actualizar tu sistema operativo: 1) Ve a la configuración del sistema, 2) Busca 'Actualización y Seguridad', 3) Haz clic en 'Buscar actualizaciones', 4) Instala las últimas actualizaciones disponibles.",
         "category": "Software"
-    },
-    {
-        "question": "¿Cómo verifico si mi computadora tiene un virus",
-        "answer": "Para verificar si hay un virus: 1) Realiza un escaneo completo del sistema con un software antivirus, 2) Observa si hay comportamientos extraños como bajo rendimiento o ventanas emergentes inusuales.",
-        "category": "General"
     }
 ]
