@@ -76,7 +76,7 @@ class SupportChatBot:
         best_responses = [(answers[i], similarities[i].item()) for i in top_indices]
         
         max_similarity = best_responses[0][1]
-        if max_similarity < 0.7:
+        if max_similarity < 0.75:
             context = " ".join(answers)
             return self.answer_question(user_question, context), None
         
